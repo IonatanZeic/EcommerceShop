@@ -1,0 +1,24 @@
+.titleShop{
+    display: grid;
+    grid-template-columns: repeat(4,233px);
+    gap: 3rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+    padding-top: 3rem;
+
+}
+
+.ShopItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    h1{
+        color: $nav_blue;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 600;
+        font-size: 4rem;
+        padding: 5rem;
+    }
+}

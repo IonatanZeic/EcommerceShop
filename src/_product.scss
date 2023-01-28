@@ -1,0 +1,12 @@
+.showProduct{
+    display: grid;
+    grid-template-columns: repeat(4,233px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 10rem;
+
+}
+p{
+    font-size: 2rem;
+}

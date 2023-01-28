@@ -1,0 +1,124 @@
+.productPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    img{
+        padding: 0 7rem;
+    }
+
+}
+.headText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 3rem;
+    h2{
+        font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    padding:  2rem 0;
+    }
+    p{
+        font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    width: 60%;
+    }
+}
+.price-quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+.buttons{
+display: flex;
+flex-direction: row;
+
+align-items:flex-end;
+}
+
+.quantityText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2{
+        font-size: 2rem;
+        padding: 0;
+    }
+}
+.changeQuantity{
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: center;
+ 
+    
+}
+.quantity{
+    padding: 0 0.5rem;
+    
+p{
+margin: auto;
+font-size: 2.5rem;
+
+}
+}
+.bi-plus-lg{
+  
+    color: green;
+    font-size: 2rem;
+    
+}
+.bi-dash-lg{
+  
+    color: red;
+    font-size: 2rem;
+    
+}
+.buttonOne{
+   
+    font-size: 2rem;
+    padding-right: 0.5rem;
+    border-radius: 10px;
+    margin-left: 10rem;
+    margin-bottom: 0.5rem;
+    font-family: "League Spartan", sans-serif;
+    
+
+    &:hover{
+        background-color: red;
+        
+    }
+}
+
+.productContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+    h2{
+        font-family: "League Spartan", sans-serif;
+        font-size: 4rem;
+        padding: 1rem;
+    }
+    p{
+        font-family: "League Spartan", sans-serif;
+        font-size: 2rem;
+        padding: 1rem;
+       
+    }
+    }

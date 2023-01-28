@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+.logo {
+  height: 6rem;
+  width: auto;
+  padding: 0.2rem 1rem;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+  background-color: #e5e5e5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 2rem;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.2s ease-out;
+  position: relative;
+}
+#navbar li a:hover {
+  color: #FCA311;
+}
+#navbar li a:hover::after {
+  content: "";
+  width: 70%;
+  height: 0.2rem;
+  background: #FCA311;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0rem;
+}
+#navbar li a.active {
+  color: #000000;
+}
+#navbar li a.active::after {
+  content: "";
+  width: 70%;
+  height: 0.2rem;
+  background: #000000;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0rem;
+}
+
+.cart {
+  color: black;
+  font-size: 3rem;
+  border-radius: 0.4rem;
+  padding-top: 0.4rem;
+}
+
+.cartAmount {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  font-size: 1rem;
+  background-color: rgb(192, 80, 80);
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 2.5rem;
+  height: 0.3rem;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease-out;
+  background-color: rgb(0, 0, 0);
+}
+
+.title {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding-top: 42rem;
+  background-image: url(/images/6supplemets-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 80rem;
+  background-position: center;
+}
+.title .title_first {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  background-color: rgba(168, 168, 168, 0.8);
+}
+.title .title_first h1, .title .title_first h2, .title .title_first h3, .title .title_first h4 {
+  margin: 0.1rem;
+  font-family: "League Spartan", sans-serif;
+}
+.title .title_first h2 {
+  padding-bottom: 3rem;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  margin: 20rem 0;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem;
+  background-image: url(/images/pexels-steve-johnson-1269968.jpg);
+  background-size: cover;
+}
+.products h3 {
+  padding: 1rem;
+  color: #14213d;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.products button {
+  background-color: #14213d;
+  color: #FCA311;
+  width: auto;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.featured {
+  padding-top: 10rem;
+  justify-content: center;
+  text-align: center;
+}
+.featured h2 {
+  color: #14213d;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+/**
+!  Here is the styling for shop items
+**/
+#featured_items {
+  display: grid;
+  grid-template-columns: repeat(4, 233px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 10rem;
+}
+
+.item {
+  border: 2px solid #0d1b2a;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.item:hover {
+  background-color: #e5e5e5;
+}
+
+.item img {
+  width: 100%;
+  height: 23rem;
+  padding: 1rem;
+  border-radius: 2px 2px 0 0;
+  object-fit: contain;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+.details h3 {
+  color: #14213d;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-quantity h2 {
+  color: #14213d;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/**
+Footer styling
+
+**/
+footer {
+  background-color: #e5e5e5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  margin-top: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+.containerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 3rem;
+  margin-bottom: 0;
+}
+.containerFlex .service, .containerFlex .about, .containerFlex .career {
+  align-items: center;
+  justify-content: center;
+}
+.containerFlex h3 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000000;
+}
+.containerFlex li {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  list-style: none;
+}
+.containerFlex li a {
+  color: #000000;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.social i {
+  font-size: 2.5rem;
+  margin: 1rem 2rem;
+  color: #FCA311;
+}
+
+.copyright {
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1040px) {
+  #featured_items {
+    display: grid;
+    grid-template-columns: repeat(3, 233px);
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 840px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translate(0, 0.78rem) rotate(-45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translate(0, -0.78rem) rotate(45deg);
+  }
+  #navbar {
+    display: none;
+    position: relative;
+  }
+  #navbar.active2 {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+  }
+  #navbar.active2 li {
+    margin: 1rem;
+  }
+  #navbar.active2 li a {
+    font-size: 2rem;
+  }
+  #featured_items {
+    display: grid;
+    grid-template-columns: repeat(2, 233px);
+    padding-top: 6rem;
+  }
+  .title {
+    background-size: auto;
+    padding-top: 32rem;
+  }
+  .title .title_first {
+    padding: 2rem;
+    height: 16rem;
+  }
+  .products {
+    margin: 15rem 0;
+    height: 15rem;
+  }
+  .products h3 {
+    color: #e5e5e5;
+    font-size: 3rem;
+  }
+  .products button {
+    font-size: 2rem;
+  }
+  footer {
+    margin-top: 15rem;
+  }
+  .containerFlex {
+    margin: 1.5rem;
+  }
+}
+@media (max-width: 440px) {
+  #featured_items {
+    display: grid;
+    grid-template-columns: repeat(1, 233px);
+    padding-top: 6rem;
+  }
+  .title {
+    background-size: 32rem;
+    padding-top: 26rem;
+  }
+  .title .title_first {
+    padding: 1rem;
+    height: 14rem;
+  }
+  .products {
+    margin: 12rem 0;
+    height: 14rem;
+  }
+  .products h3 {
+    color: #e5e5e5;
+    font-size: 2.5rem;
+  }
+  .products button {
+    font-size: 1.5rem;
+  }
+  .containerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2rem;
+    margin-bottom: 0;
+  }
+  .containerFlex .service, .containerFlex .about, .containerFlex .career {
+    margin: 2rem;
+  }
+}
+.titleShop {
+  display: grid;
+  grid-template-columns: repeat(4, 233px);
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  padding-top: 3rem;
+}
+
+.ShopItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+.ShopItems h1 {
+  color: #14213d;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  padding: 5rem;
+}
+
+.showProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 233px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 10rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.productPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.productHead img {
+  padding: 0 7rem;
+}
+
+.headText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  padding: 3rem;
+}
+.headText h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  padding: 2rem 0;
+}
+.headText p {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  width: 60%;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.quantityText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.quantityText h2 {
+  font-size: 2rem;
+  padding: 0;
+}
+
+.changeQuantity {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.quantity {
+  padding: 0 0.5rem;
+}
+.quantity p {
+  margin: auto;
+  font-size: 2.5rem;
+}
+
+.bi-plus-lg {
+  color: green;
+  font-size: 2rem;
+}
+
+.bi-dash-lg {
+  color: red;
+  font-size: 2rem;
+}
+
+.buttonOne {
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  border-radius: 10px;
+  margin-left: 10rem;
+  margin-bottom: 0.5rem;
+  font-family: "League Spartan", sans-serif;
+}
+.buttonOne:hover {
+  background-color: red;
+}
+
+.productContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 70%;
+}
+.productContent h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 4rem;
+  padding: 1rem;
+}
+.productContent p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 7rem;
+  color: black;
+}
+
+h2 {
+  font-size: 5.5rem;
+  color: black;
+}
+
+h3 {
+  font-size: 3rem;
+  color: black;
+}
+
+h4 {
+  font-size: 2rem;
+  color: black;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none !important;
+}/*# sourceMappingURL=style.css.map */
