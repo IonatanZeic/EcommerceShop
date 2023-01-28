@@ -408,19 +408,6 @@ footer {
   padding: 5rem;
 }
 
-.showProduct {
-  display: grid;
-  grid-template-columns: repeat(4, 233px);
-  gap: 30px;
-  justify-content: center;
-  margin-bottom: 50px;
-  padding-top: 10rem;
-}
-
-p {
-  font-size: 2rem;
-}
-
 .productPage {
   display: flex;
   flex-direction: column;
@@ -437,6 +424,8 @@ p {
 }
 .productHead img {
   padding: 0 7rem;
+  height: 23rem;
+  object-fit: contain;
 }
 
 .headText {
@@ -454,10 +443,10 @@ p {
   padding: 2rem 0;
 }
 .headText p {
+  width: 60%;
   font-family: "League Spartan", sans-serif;
   font-weight: 300;
-  font-size: 2.5rem;
-  width: 60%;
+  font-size: 2rem;
 }
 
 .price-quantity {
@@ -492,11 +481,10 @@ p {
 }
 
 .quantity {
-  padding: 0 0.5rem;
-}
-.quantity p {
-  margin: auto;
+  width: 4rem;
+  margin: 0 1rem;
   font-size: 2.5rem;
+  color: black;
 }
 
 .bi-plus-lg {
@@ -532,11 +520,101 @@ p {
   font-family: "League Spartan", sans-serif;
   font-size: 4rem;
   padding: 1rem;
+  color: #FCA311;
 }
-.productContent p {
+.productContent pre {
   font-family: "League Spartan", sans-serif;
   font-size: 2rem;
   padding: 1rem;
+}
+.productContent pre h1 {
+  color: #FCA311;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.HomeBtn, .checkout, .removeAll {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/*
+!style rules for shopping cart
+*/
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cart-item {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+}
+
+.title-price-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-price {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.cart-item-price {
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 6px;
+}
+
+.checkout {
+  background-color: green;
+}
+
+.removeAll {
+  background-color: red;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #0aff17;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
 
 * {

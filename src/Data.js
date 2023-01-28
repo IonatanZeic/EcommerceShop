@@ -4,17 +4,20 @@ let productString = [
     img: "/images/im1.jpg",
     name: "Applied Nutrition Iso-XP",
     price: "59",
-    desc1: "ISO-XP is a high protein supplement... ",
-    desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
- Whey Protein Isolate available, with only 0.1g Lactose per 25g serving. Basically there is no other protein, 
- anywhere, which exceeds this level of clinical protein per 100g ratio - with 23.4g of protein per 25g serving.
-  ISO-XP is made from exceedingly fresh EU, sweet dairy whey that is isolated and then spray dried. ISO-XP has
-   NO SOY added and instead uses Sunflower Lecithin as the Emulsifier.
+    desc1:
+      " ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality Whey Protein Isolate available. ",
+    desc2: `<pre>
+    <h2>ISO-XP :</h2> 
+High protein supplement with sweetener and by far the cleanest and highest quality
+Whey Protein Isolate available, with only 0.1g Lactose per 25g serving. Basically there is no other protein, 
+anywhere, which exceeds this level of clinical protein per 100g ratio - with 23.4g of protein per 25g serving.
+ISO-XP is made from exceedingly fresh EU, sweet dairy whey that is isolated and then spray dried. ISO-XP has
+NO SOY added and instead uses Sunflower Lecithin as the Emulsifier.
 
 ISO-XP is ideal for anyone looking to increase daily protein intake without any additional fats, carbohydrate or sugars.
- ISO-XP should be mixed with water or skimmed milk for easy mixing and great taste.
+ISO-XP should be mixed with water or skimmed milk for easy mixing and great taste.
 
-KEY BENEFITS
+<h1>KEY BENEFITS</h1>
 0g Sugar (per 25g serving)
 0g Carbs (per 25g serving)
 0g Lactose (per 25g serving)
@@ -26,13 +29,14 @@ Easy Mixing
 Whey Produced from Grass Fed Cows
 Halal Certified Product
 
- <strong>  SUGGESTED USE </strong>
+
+<h1>SUGGESTED USE</h1>
 Mix 1 scoop (approximately 25g) with 200ml of water or skimmed milk.
 Use 1-3 servings daily, depending on your protein requirements.
 ISO-XP is rapidly absorbed, so the optimal times to use it are when you need protein fast.
- This includes immediately upon waking before breakfast, and immediately after exercise.
-  After training, many athletes take a double serving (50g) as the body is able to process a larger amount of protein in its
-   depleted state. </pre> `,
+This includes immediately upon waking before breakfast, and immediately after exercise.
+After training, many athletes take a double serving (50g) as the body is able to process a larger amount of protein in its
+depleted state. </pre> `,
   },
   {
     id: "p02",
@@ -559,13 +563,13 @@ ISO-XP is rapidly absorbed, so the optimal times to use it are when you need pro
                                                After training, many athletes take a double serving (50g) as the body is able to process a larger amount of protein in its
                                                 depleted state. </pre> `,
   },
-   {
-     id: "p17",
-     img: "/images/im1.jpg",
-     name: "Applied Nutrition Iso-XP",
-     price: "59",
-     desc1: "ISO-XP is a high protein supplement... ",
-     desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
+  {
+    id: "p17",
+    img: "/images/im1.jpg",
+    name: "Applied Nutrition Iso-XP",
+    price: "59",
+    desc1: "ISO-XP is a high protein supplement... ",
+    desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
   Whey Protein Isolate available, with only 0.1g Lactose per 25g serving. Basically there is no other protein, 
   anywhere, which exceeds this level of clinical protein per 100g ratio - with 23.4g of protein per 25g serving.
    ISO-XP is made from exceedingly fresh EU, sweet dairy whey that is isolated and then spray dried. ISO-XP has
@@ -593,14 +597,14 @@ ISO-XP is rapidly absorbed, so the optimal times to use it are when you need pro
   This includes immediately upon waking before breakfast, and immediately after exercise.
    After training, many athletes take a double serving (50g) as the body is able to process a larger amount of protein in its
     depleted state. </pre> `,
-   },
-   {
-     id: "p18",
-     name: "Applied Nutrition Iso-XP",
-     img: "/images/im2.png",
-     price: "59",
-     desc1: "Product ",
-     desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
+  },
+  {
+    id: "p18",
+    name: "Applied Nutrition Iso-XP",
+    img: "/images/im2.png",
+    price: "59",
+    desc1: "Product ",
+    desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
      Whey Protein Isolate available, with only 0.1g Lactose per 25g serving. Basically there is no other protein, 
      anywhere, which exceeds this level of clinical protein per 100g ratio - with 23.4g of protein per 25g serving.
       ISO-XP is made from exceedingly fresh EU, sweet dairy whey that is isolated and then spray dried. ISO-XP has
@@ -628,14 +632,14 @@ ISO-XP is rapidly absorbed, so the optimal times to use it are when you need pro
      This includes immediately upon waking before breakfast, and immediately after exercise.
       After training, many athletes take a double serving (50g) as the body is able to process a larger amount of protein in its
        depleted state. </pre> `,
-   },
-   {
-     id: "p19",
-     name: "Applied Nutrition Iso-XP",
-     img: "/images/im3.png",
-     price: "59",
-     desc1: "Product ",
-     desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
+  },
+  {
+    id: "p19",
+    name: "Applied Nutrition Iso-XP",
+    img: "/images/im3.png",
+    price: "59",
+    desc1: "Product ",
+    desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
         Whey Protein Isolate available, with only 0.1g Lactose per 25g serving. Basically there is no other protein, 
         anywhere, which exceeds this level of clinical protein per 100g ratio - with 23.4g of protein per 25g serving.
          ISO-XP is made from exceedingly fresh EU, sweet dairy whey that is isolated and then spray dried. ISO-XP has
@@ -663,14 +667,14 @@ ISO-XP is rapidly absorbed, so the optimal times to use it are when you need pro
         This includes immediately upon waking before breakfast, and immediately after exercise.
          After training, many athletes take a double serving (50g) as the body is able to process a larger amount of protein in its
           depleted state. </pre> `,
-   },
-   {
-     id: "p20",
-     name: "Applied Nutrition Iso-XP",
-     price: "59",
-     img: "/images/im4.png",
-     desc1: "Product ",
-     desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
+  },
+  {
+    id: "p20",
+    name: "Applied Nutrition Iso-XP",
+    price: "59",
+    img: "/images/im4.png",
+    desc1: "Product ",
+    desc2: `<pre>ISO-XP is a high protein supplement with sweetener and by far the cleanest and highest quality
            Whey Protein Isolate available, with only 0.1g Lactose per 25g serving. Basically there is no other protein, 
            anywhere, which exceeds this level of clinical protein per 100g ratio - with 23.4g of protein per 25g serving.
             ISO-XP is made from exceedingly fresh EU, sweet dairy whey that is isolated and then spray dried. ISO-XP has
@@ -698,7 +702,5 @@ ISO-XP is rapidly absorbed, so the optimal times to use it are when you need pro
            This includes immediately upon waking before breakfast, and immediately after exercise.
             After training, many athletes take a double serving (50g) as the body is able to process a larger amount of protein in its
              depleted state. </pre> `,
-   },
-   
- 
+  },
 ];
