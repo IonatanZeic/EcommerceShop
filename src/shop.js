@@ -23,7 +23,7 @@ let generateShop = () => {
 			<h3>${name}</h3>
 			
 			<div class="price-quantity">
-				<h2  id="${id}">${price}</h2>
+				<h2  id="${id}">$${price}</h2>
 			
 			</div>
 		</div>

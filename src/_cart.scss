@@ -16,40 +16,87 @@
 .bi-x-lg{
     color: red;
     font-weight: bold;
+    font-size: 2rem;
+    height: 2.4rem;
+    &:hover{
+        cursor: pointer;
+        background-color: $nav_back;
+       
+        border-radius: 0.5rem;
+        
+    }
 }
 
 /*
 !style rules for shopping cart
 */
 
-.shopping-cart{
-    display: grid;
-    grid-template-columns: repeat(1,320px);
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-
+#shopping-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    padding: 5rem 0;
+    
 }
 
 .cart-item{
     border:2px solid black;
     border-radius: 5px;
     display: flex;
+    width: 35%;
+
+
+    margin: 1rem;
+    img{
+        width: 30%;
+        object-fit: contain;
+        padding: 1rem;
+    }
 
 }
-.title-price-x{
-    width: 195px;
+.details{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    h3{
+        margin :0;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items:baseline;
+      
+        .quantity{
+            
+            text-align: center;
+        }
+    }
+    
+}
+.title-price-x{
+    
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
+   
 
 
 }
 
 .title-price{
     display: flex;
+    flex-direction: column;
     align-items: start;
-    gap: 10px;
+    margin: 0;
+    p{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+    
 }
 
 .cart-item-price{
@@ -60,17 +107,44 @@
 
 
 }
+
+
+
+.totamount{
+    h2{
+        font-size: 4rem;
+    }
+}
 .checkout{
-    background-color: green;
+    background-color: $nav_li_a;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin: 1rem;
+    border: solid 0.2rem black;
+    &:hover{
+        background-color: rgba(252, 163, 17, 0.5);
+    }
 }
 .removeAll{
-    background-color: red;
+    background-color: $cart_amount;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin: 1rem;
+    border: solid 0.2rem black;
+    &:hover{
+        background-color: rgb(183, 183, 183, 0.7);
+    }
 }
 
 .alert {
     padding: 20px;
     background-color: #0aff17;
     color: white;
+    font-size: 2.5rem;
+    align-items: baseline;
+    p{
+        font-size: 2.5rem;
+    }
   }
   
   .closebtn {
@@ -87,3 +161,52 @@
   .closebtn:hover {
     color: black;
   }
+.clearCart{
+    h2{
+        font-size: 4rem;
+    }
+    button{
+        font-size: 2rem;
+    }
+}
+@media (max-width:1220px){
+   .title-price{
+    p{
+        font-size: 1.5rem;
+    }
+   }
+   .buttons{
+    font-size: 1.5rem;
+   }
+   .details h3{
+    font-size: 1.5rem;
+   }
+  }
+  @media (max-width:840px){
+.cart-item{
+    width: 45%;
+}
+        
+  }
+  @media (max-width:640px){
+    .cart-item{
+        width: 55%;
+    }
+    .totamount{
+        h2{
+            font-size: 2rem;
+        }
+    } 
+      }
+      @media (max-width:540px){
+        .cart-item{
+            width: 65%;
+        }
+                
+          }
+          @media (max-width:440px){
+            .cart-item{
+                width: 75%;
+            }
+                    
+              }

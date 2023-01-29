@@ -22,3 +22,97 @@
         padding: 5rem;
     }
 }
+
+
+@media (max-width:1040px){
+    .titleShop{
+      display: grid;
+      grid-template-columns: repeat(3,233px);
+      padding-top: 6rem;
+    
+    }
+  }
+    
+    
+    
+    
+  @media (max-width:840px){
+  
+     
+      .hamburger{
+          display: block;
+          &.active .bar:nth-child(2){
+              opacity:0;
+          }
+          &.active .bar:nth-child(1){
+              transform: translate(0, 0.78rem) rotate(-45deg);
+          }
+          &.active .bar:nth-child(3){
+              transform: translate(0, -0.78rem) rotate(45deg);
+          }
+  
+      }
+      #navbar{
+          display: none;
+          position: relative;
+          &.active2{
+              position: fixed;
+              top: 6rem;
+              left: 0;
+              display: flex;
+              width: 100%;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              li{
+                  margin: 1rem;
+                 a{
+                  font-size: 2rem;
+                 } 
+              }
+              background-color: $nav_back;
+              }
+      }
+  
+  .titleShop{
+    display: grid;
+    grid-template-columns: repeat(2,233px);
+    padding-top: 6rem;
+  
+  }
+
+  
+  
+  footer{
+    margin-top: 15rem;
+  }
+  .containerFlex{
+    margin: 1.5rem;
+  
+  }
+  }
+  
+  @media (max-width:440px){
+    .titleShop{
+      display: grid;
+      grid-template-columns: repeat(1,233px);
+      padding-top: 6rem;
+    
+    }
+ 
+
+  .containerFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 100%;
+    margin: 2rem;
+    margin-bottom: 0;
+    .service,.about,.career{
+      margin: 2rem;
+      
+    }
+  }
+  
+  }

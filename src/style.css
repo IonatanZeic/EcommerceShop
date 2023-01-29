@@ -408,6 +408,78 @@ footer {
   padding: 5rem;
 }
 
+@media (max-width: 1040px) {
+  .titleShop {
+    display: grid;
+    grid-template-columns: repeat(3, 233px);
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 840px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translate(0, 0.78rem) rotate(-45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translate(0, -0.78rem) rotate(45deg);
+  }
+  #navbar {
+    display: none;
+    position: relative;
+  }
+  #navbar.active2 {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+  }
+  #navbar.active2 li {
+    margin: 1rem;
+  }
+  #navbar.active2 li a {
+    font-size: 2rem;
+  }
+  .titleShop {
+    display: grid;
+    grid-template-columns: repeat(2, 233px);
+    padding-top: 6rem;
+  }
+  footer {
+    margin-top: 15rem;
+  }
+  .containerFlex {
+    margin: 1.5rem;
+  }
+}
+@media (max-width: 440px) {
+  .titleShop {
+    display: grid;
+    grid-template-columns: repeat(1, 233px);
+    padding-top: 6rem;
+  }
+  .containerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2rem;
+    margin-bottom: 0;
+  }
+  .containerFlex .service, .containerFlex .about, .containerFlex .career {
+    margin: 2rem;
+  }
+}
 .productPage {
   display: flex;
   flex-direction: column;
@@ -499,14 +571,15 @@ footer {
 
 .buttonOne {
   font-size: 2rem;
-  padding-right: 0.5rem;
+  padding: 0 0.5rem;
   border-radius: 10px;
   margin-left: 10rem;
   margin-bottom: 0.5rem;
   font-family: "League Spartan", sans-serif;
+  background-color: #FCA311;
 }
 .buttonOne:hover {
-  background-color: red;
+  background-color: rgba(252, 163, 17, 0.5);
 }
 
 .productContent {
@@ -515,6 +588,7 @@ footer {
   justify-content: center;
   align-items: start;
   width: 70%;
+  font-size: 2rem;
 }
 .productContent h2 {
   font-family: "League Spartan", sans-serif;
@@ -522,15 +596,117 @@ footer {
   padding: 1rem;
   color: #FCA311;
 }
-.productContent pre {
+.productContent .productText {
   font-family: "League Spartan", sans-serif;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 3rem;
 }
-.productContent pre h1 {
+.productContent .productText h1 {
   color: #FCA311;
 }
 
+@media (max-width: 1200px) {
+  .productHead {
+    width: 90%;
+  }
+  .headText p {
+    width: 60%;
+  }
+  .productContent {
+    width: 75%;
+  }
+}
+@media (max-width: 950px) {
+  .productHead {
+    width: 95%;
+  }
+  .headText p {
+    width: 70%;
+  }
+  .productContent {
+    width: 80%;
+  }
+}
+@media (max-width: 880px) {
+  .productHead {
+    width: 95%;
+  }
+  .headText {
+    width: 80%;
+  }
+  .headText h2 {
+    font-size: 3rem;
+  }
+  .headText .productText {
+    font-size: 2.5rem;
+  }
+  .quantityText h2 {
+    font-size: 1.7rem;
+  }
+  .productContent {
+    width: 80%;
+  }
+}
+@media (max-width: 770px) {
+  .productHead img {
+    padding: 0 3rem;
+    height: 18rem;
+  }
+  .headText p {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .productHead img {
+    padding: 0 3rem;
+    height: 16rem;
+  }
+  .headText p {
+    width: 90%;
+  }
+  .headText h2 {
+    font-size: 2.5rem;
+  }
+  .headText .productText {
+    font-size: 2rem;
+  }
+  .quantityText h2 {
+    font-size: 1.4rem;
+  }
+  .productContent {
+    width: 90%;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .buttons .buttonOne {
+    margin: 0;
+  }
+}
+@media (max-width: 570px) {
+  .productHead {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 470px) {
+  .headText p {
+    width: 100%;
+  }
+  .headText h2 {
+    font-size: 2rem;
+  }
+  .headText .productText {
+    font-size: 1.6rem;
+  }
+  .quantityText h2 {
+    font-size: 1.2rem;
+  }
+  .productContent {
+    width: 100%;
+  }
+}
 .text-center {
   text-align: center;
   margin-top: 20px;
@@ -549,36 +725,73 @@ footer {
 .bi-x-lg {
   color: red;
   font-weight: bold;
+  font-size: 2rem;
+  height: 2.4rem;
+}
+.bi-x-lg:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+  border-radius: 0.5rem;
 }
 
 /*
 !style rules for shopping cart
 */
-.shopping-cart {
-  display: grid;
-  grid-template-columns: repeat(1, 320px);
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+#shopping-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5rem 0;
 }
 
 .cart-item {
   border: 2px solid black;
   border-radius: 5px;
   display: flex;
+  width: 35%;
+  margin: 1rem;
+}
+.cart-item img {
+  width: 30%;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.details h3 {
+  margin: 0;
+}
+.details .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.details .buttons .quantity {
+  text-align: center;
 }
 
 .title-price-x {
-  width: 195px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
 }
 
 .title-price {
   display: flex;
+  flex-direction: column;
   align-items: start;
-  gap: 10px;
+  margin: 0;
+}
+.title-price p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 .cart-item-price {
@@ -588,18 +801,41 @@ footer {
   padding: 3px 6px;
 }
 
+.totamount h2 {
+  font-size: 4rem;
+}
+
 .checkout {
-  background-color: green;
+  background-color: #FCA311;
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin: 1rem;
+  border: solid 0.2rem black;
+}
+.checkout:hover {
+  background-color: rgba(252, 163, 17, 0.5);
 }
 
 .removeAll {
-  background-color: red;
+  background-color: rgb(183, 183, 183);
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin: 1rem;
+  border: solid 0.2rem black;
+}
+.removeAll:hover {
+  background-color: rgba(183, 183, 183, 0.7);
 }
 
 .alert {
   padding: 20px;
   background-color: #0aff17;
   color: white;
+  font-size: 2.5rem;
+  align-items: baseline;
+}
+.alert p {
+  font-size: 2.5rem;
 }
 
 .closebtn {
@@ -617,6 +853,120 @@ footer {
   color: black;
 }
 
+.clearCart h2 {
+  font-size: 4rem;
+}
+.clearCart button {
+  font-size: 2rem;
+}
+
+@media (max-width: 1220px) {
+  .title-price p {
+    font-size: 1.5rem;
+  }
+  .buttons {
+    font-size: 1.5rem;
+  }
+  .details h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 840px) {
+  .cart-item {
+    width: 45%;
+  }
+}
+@media (max-width: 640px) {
+  .cart-item {
+    width: 55%;
+  }
+  .totamount h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 540px) {
+  .cart-item {
+    width: 65%;
+  }
+}
+@media (max-width: 440px) {
+  .cart-item {
+    width: 75%;
+  }
+}
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem;
+  padding-left: 10rem;
+}
+.contactText h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 3rem 3rem 3rem 0;
+}
+.contactText address {
+  font-size: 2rem;
+}
+.contactText address strong {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10rem 0;
+}
+
+.contactMap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+@media (max-width: 1150px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactMap {
+    display: flex;
+    justify-content: start;
+    padding: 0 10rem;
+    width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contactMap {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5rem 0 0 0;
+    width: 100%;
+  }
+  .contactText {
+    padding-left: 2rem;
+  }
+  .gmap_canvas {
+    width: 40rem !important;
+  }
+  .maprouter {
+    width: 40rem !important;
+  }
+  .contactMap {
+    width: 40rem !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;

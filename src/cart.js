@@ -43,11 +43,12 @@ let generateCartItems = () => {
         }
         else{
           ShoppingCart.innerHTML = ``;
-          label.innerHTML = `
+          label.innerHTML = `<div class="clearCart">
           <h2>Cart is Empty</h2>
           <a href="/html/home.html">
             <button class="HomeBtn">Back to home</button>
           </a>
+          </div>
           `;
         }
        
@@ -55,10 +56,12 @@ let generateCartItems = () => {
       .join(" "));
   } else {
     ShoppingCart.innerHTML = ``;
-    label.innerHTML = `
+    label.innerHTML = `<div class="clearCart">
     <h2>Cart is Empty</h2>
     <a href="/html/home.html">
       <button class="HomeBtn">Back to home</button>
+    </a>
+    </div>
     </a>
     `;
   }
@@ -128,9 +131,11 @@ let totalAmount = () => {
           return id2 * search.price; 
         }).reduce((x,y)=>x+y,0);
         label.innerHTML = 
-        `<h2> Total Bill : $ ${amount}</h2>
+        `<div class="totamount">
+        <h2> Total Bill : $ ${amount}</h2>
         <button onclick="checkoutC()" class="checkout" >Checkout</button>
-        <button onclick="clearCart()" class="removeAll">ClearCart</button>`
+        <button onclick="clearCart()" class="removeAll">ClearCart</button>
+        </div>`
         ;
         
       }});
@@ -150,7 +155,7 @@ let clearCart = (() => {
 })
 
 let checkoutC = () => {
-  label2.innerHTML = `<div class="alert">
+  labelCheckout.innerHTML = `<div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';clearCart()" >&check;</span> 
   <p>Your order was processed !</p>
 </div>`;

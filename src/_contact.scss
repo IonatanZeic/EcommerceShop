@@ -1,0 +1,76 @@
+.contactText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem;
+    padding-left: 10rem;
+    h1{
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 3rem 3rem  3rem 0;
+    }
+    address{
+        font-size: 2rem;
+     strong{
+        font-weight: 700;
+        font-size: 2rem;
+     }
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin: 10rem 0;
+}
+.contactMap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+@media (max-width: 1150px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactMap{
+        display: flex;
+        justify-content: start;
+        padding: 0 10rem;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 680px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .contactMap{
+        display: flex;
+        justify-content: flex-start;
+        padding: 5rem 0 0 0;
+        width: 100%;
+    }
+    .contactText{
+        padding-left: 2rem;
+    }
+    .gmap_canvas{
+        width: 40rem !important;
+    
+    }
+    .maprouter{
+        width: 40rem !important;
+    }
+    .contactMap{
+        width: 40rem !important;
+    }
+   
+}
