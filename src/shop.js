@@ -42,7 +42,7 @@ basket = [];
 	basket.push({
 		id:selected.id,
 	});
-	window.open("/html/product.html","_self");
+	window.open("product.html","_self");
 	localStorage.setItem("data", JSON.stringify(basket));
 
 };
